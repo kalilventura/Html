@@ -1,0 +1,33 @@
+/*Herança e especificidade*/
+
+/*Seletor universal
+*{
+	border: 1px solid red;
+}*/
+
+/*Caso tenha dois seletores, o ultimo sempre conta*/
+/*!important -> mostra qual atributo será mais importante*/
+/*#pagina p{
+	color: red !important;
+}
+
+#pagina p{
+	color: blue;
+}*/
+
+/*Se um seletor for mais especifico que o outro, a regra mais especifica será aplicada (terá precedencia)*/
+*{
+	color: red;
+}
+/*Grau de especificidade 3*/
+h2{ 
+	color: blue;
+}
+/*Mais específico h2 com uma class : .verde*/ /*Grau de especificidade 2*/
+h2.verde{
+	color: green;
+}
+/*h2 com o id: #amarelo, o id é mais especifico que uma class*/ /*Grau de especificidade 1*/
+h2#amarelo{
+	color: yellow;
+}
