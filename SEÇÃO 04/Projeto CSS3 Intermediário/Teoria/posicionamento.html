@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+	<title>Posicionamentos(static, relative, absolute e fixed)</title>
+	<style type="text/css">
+	body{
+		background: #007fc7;
+	}
+	/*Para as tags h1 e p a posição padrão é static*/
+	h1{
+		
+	}
+	p{
+		width: 300px;
+	}
+	#conteiner{
+		background: #fff;
+		width: 800px;
+		/*Para ficar sempre centralizado é colocar auto para as margens esquerda e direita*/
+		margin: 10px auto;
+		padding: 10px;
+		position: relative;	
+	}
+	.relative{
+		border: 1px solid red;
+		position: relative;
+		/*top, right, bottom e left -> são utilizados para fazer o deslocamento do elemento*/
+	}
+	.absolute{
+		border: 1px solid red;
+		/*A posição é calculada pelo conteiner*/
+		position: absolute;
+		background: #f2f2f2;
+		top: 80px;
+		left: 80px;
+
+	}
+	.fixed{
+		border: 1px solid red;
+		/*A posição é calculada pelo conteiner*/
+		position: fixed;
+		background: #f2f2f2;
+		top: 0px;
+		left: 0px;
+
+	}
+	</style>
+</head>
+<body>
+	<div id="conteiner">
+		<h1>Posicionamentos</h1>
+
+		<p>P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in urna nulla. Donec congue, est vitae fringilla sagittis, odio ipsum efficitur mauris, non mattis nunc libero ut ligula. Vestibulum luctus viverra sem in semper.</p>
+
+		<p class="fixed">P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in urna nulla. Donec congue, est vitae fringilla sagittis, odio ipsum efficitur mauris, non mattis nunc libero ut ligula. Vestibulum luctus viverra sem in semper.</p>
+
+		<p>P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse in urna nulla. Donec congue, est vitae fringilla sagittis, odio ipsum efficitur mauris, non mattis nunc libero ut ligula. Vestibulum luctus viverra sem in semper.</p>
+		
+	</div>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<doctype html>
+	<html>
+	<head>
+		<title>Tabelas</title>
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<h2>Exemplo</h2>
+		<!-- o width="100%" significa que essa table utilizará 100% do navegador-->
+		<table border="2" width="100%">
+			<!-- Linha da tabela -->
+			<tr>
+				<!-- Define as celulas da tabela -->
+				<td>Coluna 01</td>
+				<td>Coluna 02</td>
+				<td>Coluna 03</td>
+			</tr>
+			<tr>
+				<td>Coluna 11</td>
+				<td>Coluna 21</td>
+				<td>Coluna 31</td>
+			</tr>
+			<!-- Adicionar imagens a tabela -->
+			<!-- <tr>
+				<td>
+					Pode-se tambem colocar o tamanho em % das imagens
+					<img src="Imagens/ferrari.jpg" width="200">
+				</td>
+			</tr>-->
+		</table>
+		<br>
+
+		<h2>Produtos</h2>
+		<table border="1">
+			<tr>
+				<td>Código</td>
+				<td>Produto</td>
+				<td>Preço</td>
+			</tr>	
+			<tr>
+				<td>001</td>
+				<td>Notebook</td>
+				<td>R$ 2.500,00</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>Tablet</td>
+				<td>R$ 999,00</td>
+			</tr>
+			<tr>
+				<!-- Extensão da coluna em 2 -->
+				<td rowspan="2">Desconto</td>
+				<!-- Mesclar duas linhas -->
+				<td colspan="2">Cupom 01 - R$10</td>
+			</tr>
+			<tr>
+				<!-- Mesclar duas linhas -->
+				<td colspan="2">Cupom 02 - R$10</td>
+			</tr>
+			<tr>
+				<td>Total: </td>
+				<td colspan="2">R$ 3.478,98</td>
+			</tr>
+		</table>
+	</body>
+	</html>

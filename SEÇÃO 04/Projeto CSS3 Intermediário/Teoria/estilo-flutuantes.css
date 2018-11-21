@@ -1,0 +1,26 @@
+.conteudo{
+	background: blue;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	float: right;
+	margin: 10px;
+}
+
+.conteudo1{
+	background: red;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+	float: right;
+}
+.conteudo0{
+	background: red;
+	border: 1px solid gray;
+	width: 150px;
+	height: 150px;
+}
+.clear{
+	/*left right both none*/
+	clear: right;
+}
